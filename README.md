@@ -1,9 +1,10 @@
 # MPU6050_angle_readings
 # Pitch and roll angles from a MPU6050 sensor and CF filter
-###Diego Chavez - diegochav3z
-###New Mexico State University
-###email: saidcha@nmsu.edu - saidcharana@gmail.com 
-###website: diegochav3z.com  
+
+### Diego Chavez - diegochav3z
+### New Mexico State University
+### email: saidcha@nmsu.edu - saidcharana@gmail.com 
+### website: diegochav3z.com  
 Jupyter notebook code to obtain pitch and roll angles using a MPU6050 intertial motion unit. The MPU6050 used for this code is a 6-DOF with 3 degrees dedicated to an accelerometer and the other 3 dedicated to a gyroscope. The output of the accelerometer is normalized to +/- 2 LSB/g, therefore its output is in (g). For the gyroscope its sensitivity 131LSB/degrees/second, therefore its output is in (degrees/s). The communication protocol used was I2C. 
 
 All sensors come with noise this means that a filter is necessary to process the information and have clear data coming out of it. The forces actuating in the object is mainly provided by the accelerometer, however the accelerometer is very sensitive to small forces. This means that a 'low pass' filter needs to be used to counteract the disturbances. 
